@@ -5,15 +5,14 @@ Security Analyst Project
 Created this project to learn how to use SIEM on Azure.
 Credit goes to Josh Makador for teaching this project.
 
-Used custom PowerShell script to extract metadata from Windows Event Viewer to be forwarded to third-party API to derive geolocation data
-
 API Key from https://ipgeolocation.io/
-To convert the metadata of failed logins (IP addresses) into geographic locations
 
-Configured Log Analytics Workspace in Azure to ingest custom logs containing geographic information (latitude, longitude, state/province, and country)
+Custom PowerShell script was used to extract metadata from Windows Event Viewer, which was forwarded to a third-party API to determine geolocation data.
 
-Configured custom fields in Log Analytics Workspace with the intent of mapping geo data in Azure Sentinel
+Log Analytics Workspace in Azure was configured to accept custom logs containing geographic information, including latitude, longitude, state/province, and country
 
-Configured Azure Sentinel (Microsoft’s cloud SIEM) workbook to display global attack data (RDP brute force) on a world map according to physical location and magnitude of attacks
+Custom fields were configured in the Log Analytics Workspace with the aim of mapping geolocation data in Azure Sentinel
+
+Azure Sentinel Workbook was configured to display global attack data, including RDP brute force attacks, on a world map based on physical location and number of attacks
 
 Screenshots of World Map and Powershell scripts in folders
